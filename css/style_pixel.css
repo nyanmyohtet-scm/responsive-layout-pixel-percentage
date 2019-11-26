@@ -1,0 +1,158 @@
+@charset "utf-8";
+.clearFix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	font-size: 0px;
+	height: 0px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+.box {
+	box-sizing: border-box;
+	height: 162.5px;
+	width: 162.5px;
+	border: 1px solid black;
+}
+nav, main, aside, footer {
+	border: 1px solid red;
+}
+nav, footer {
+	text-align: center;
+	line-height: 50px;
+}
+nav, .content {
+	margin-bottom: 40px;
+}
+nav li a {
+	/*box-sizing: border-box;*/
+	float: left;
+	display: block;
+	width: 194.8px;
+	border-right: 1px solid gray;
+}
+nav li:last-child a {
+	border-right: none;
+}
+main {
+	float: right;
+	width: 750px;
+	padding: 30px 0 20px 0;
+}
+main .box {
+	float: left;
+	margin: 0 0 20px 20px;
+}
+main .sec02 {
+	padding: 0 20px;
+}
+aside {
+	float: left;
+	width: 200px;
+	padding-top: 30px;
+}
+aside .box {
+	margin: 0 auto 20px auto;
+}
+@media (min-width: 767px) and (max-width: 979px) {
+	.container {
+		width: 767px;
+	}
+	.box {
+		width: 169px;
+		height: 127px;
+	}
+	nav li a {
+		width: 152.2px;
+	}
+	main {
+		width: 587px;
+	}
+	aside {
+		width: 156.53px;
+	}
+	aside .box {
+		width: 127.18px;
+	}
+}
+@media (min-width: 640px) and (max-width: 766px) {
+	.container {
+		width: 640px;
+	}
+	nav li,
+	main,
+	aside {
+		display: block;
+	}
+	nav li a,
+	main,
+	aside {
+		width: 638px;
+	}
+	nav li a {
+		/*width: 126.8px;*/
+		border-right: none;
+		border-bottom: 1px solid gray;
+	}
+	nav li:last-child a {
+		border-bottom: none;
+	}
+	main {
+		margin-bottom: 40px;
+	}
+	main .box {
+		width: 289px;
+	}
+	aside .box {
+		width: 598px;
+	}
+}
+@media (max-width: 639px) {
+	.container {
+		width: 320px;
+	}
+	nav li,
+	main,
+	aside,
+	.box {
+		display: block;
+	}
+	nav li a,
+	main,
+	aside {
+		width: 318px;
+	}
+	nav li a {
+		/*width: 126.8px;*/
+		border-right: none;
+		border-bottom: 1px solid gray;
+	}
+	nav li:last-child a {
+		border-bottom: none;
+	}
+	main {
+		margin-bottom: 40px;
+	}
+	main .box {
+		width: 300px;
+		margin-left: 9px;
+	}
+	aside .box {
+		width: 300px;
+	}
+}
